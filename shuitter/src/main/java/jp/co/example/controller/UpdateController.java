@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import jp.co.example.dao.PartyDao;
-import jp.co.example.dao.UserInfoDao;
 import jp.co.example.entity.Party;
 import jp.co.example.form.UpdateForm;
 
@@ -31,8 +30,7 @@ public class UpdateController {
 	    @Autowired
 	    PartyDao partyDao;
 
-	    @Autowired
-	    private UserInfoDao userInfo;
+
 
 	    @RequestMapping("/partyUpdate")
 	    public String select(@ModelAttribute("updateForm") UpdateForm form, Model model) {
